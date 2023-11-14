@@ -2,7 +2,7 @@ def media():
     x = []
     while True:
        try:
-            y = float(input("introduce un numero"))
+            y = float(input("introduce un numero, otra cosa para terminar"))
             x.append(y)
        except ValueError:
            break
