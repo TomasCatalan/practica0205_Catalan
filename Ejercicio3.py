@@ -1,4 +1,11 @@
 def x(y):
+    '''Funcion que calcula el area de un circulo
+    
+    Parametros:
+        - y: radio del circulo
+    
+    Salida:
+        - Entrega el area de un circulo'''
 
     return 3.1416 * y**2
 
