@@ -1,4 +1,4 @@
-def x(n): # FUNCION RECURSIVA
+def x(factorialrecursivo): # FUNCION RECURSIVA
     '''Funcion que calcula el factorial de un numero entero
     
     Parametros:
@@ -6,15 +6,15 @@ def x(n): # FUNCION RECURSIVA
     Salida: 
         - factorial del numero introducido'''
 
-    if n == 0:
+    if factorialrecursivo == 0:
         return 1
     else:
-        return n * x(n - 1)
+        return factorialrecursivo * x(factorialrecursivo - 1)
     
-n = int(input("introduzca un numero entero"))
+factorialrecursivo = int(input("introduzca un numero entero"))
 print(x(n))
 
-def y(m): # BUCLE ITERATIVO
+def y(factorialiterativo): # BUCLE ITERATIVO
     '''Funcion que calcula el factorian de un numero entero
     con un bucle
     
@@ -24,9 +24,9 @@ def y(m): # BUCLE ITERATIVO
     Salida:
         - factorial del numero introducido'''
     
-    for i in range(1, m + 1):
+    for i in range(1, factorialiterativo + 1):
         z = z * (z -1)  
     return z
            
-m = int(input("introduzca un numero entero"))
-print(x(m))
+factorialiterativo = int(input("introduzca un numero entero"))
+print(x(factorialiterativo))
