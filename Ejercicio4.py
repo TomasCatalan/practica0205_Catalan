@@ -1,4 +1,14 @@
 def media():
+    '''Funcion que calcula la media
+    
+    Parametros:
+        - no tiene, al iniciar preguntara por un numero,
+        introducir cualquier otra cosa que no sea float, para terminar
+        
+    Solucion:
+        - el programa entregara la media de los numeros introducidos 
+        en el diccionario'''
+    
     x = []
     while True:
        try:
