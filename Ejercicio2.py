@@ -14,8 +14,10 @@ def x(n): # FUNCION RECURSIVA
 n = int(input("introduzca un numero entero"))
 print(x(n))
 
-def y(m):
+def y(m): # BUCLE ITERATIVO
     for i in range(1, m + 1):
-        
-    
+        z = z * (z -1)  
+    return z
+           
 m = int(input("introduzca un numero entero"))
+print(x(m))
