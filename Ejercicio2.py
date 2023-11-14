@@ -12,7 +12,7 @@ def x(factorialrecursivo): # FUNCION RECURSIVA
         return factorialrecursivo * x(factorialrecursivo - 1)
     
 factorialrecursivo = int(input("introduzca un numero entero"))
-print(x(n))
+print(x(factorialrecursivo))
 
 def y(factorialiterativo): # BUCLE ITERATIVO
     '''Funcion que calcula el factorian de un numero entero
