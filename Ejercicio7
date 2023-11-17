@@ -4,7 +4,6 @@ def frecuenciapalabras(texto):
     for x in texto.split():
         x = x.lower().strip('.,?!()[]{}:;\'"')  # Convertir a minúsculas y eliminar puntuación
         frecuencia[x] = frecuencia.get(x, 0) + 1
-    print(frecuencia)
     return frecuencia
 
 y = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor"
@@ -13,7 +12,8 @@ frecuenciapalabras(y)
 def palabrarepetida(z):
   
     a = max(z, key=z.get)
-    print(a, z[a])
+    
     return a, z[a]
 
-palabrarepetida(frecuenciapalabras(y))
+
+print("la palabra mas repetida del texto es", palabrarepetida(frecuenciapalabras(y)), "veces")
