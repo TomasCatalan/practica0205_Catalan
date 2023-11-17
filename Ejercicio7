@@ -1,4 +1,11 @@
 def frecuenciapalabras(texto):
+    '''Funcion que identifica la frecuencia de cada palabra en un texto
+    
+    Parametros: 
+        - texto: parrafo o texto introducido a determinar frecuencia de cada palabra
+        
+    Salida:
+        - Entrega un diccionario con una frcuencia asociada a cada palabra'''
     
     frecuencia = {}
     for x in texto.split():
@@ -6,13 +13,20 @@ def frecuenciapalabras(texto):
         frecuencia[x] = frecuencia.get(x, 0) + 1
     return frecuencia
 
-y = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor"
+y = ("En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor")
 frecuenciapalabras(y)
 
 def palabrarepetida(z):
-  
-    a = max(z, key=z.get)
+    '''Funcion que identifica en un diccionario la palabra mas repetida
     
+    Parametros:
+        - z: diccionario introducido 
+        - necesita ser usada junto con la funcion frecuenciapalabras()
+    
+    Salida:
+        - la palabra mas repetida en el diccionario'''
+    
+    a = max(z, key=z.get)
     return a, z[a]
 
 
