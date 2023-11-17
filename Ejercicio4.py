@@ -20,5 +20,6 @@ def media():
     if x:
         z = sum(x) / len(x)
         print("la media de", x, "es igual a",z)
+    return
 
 media()
