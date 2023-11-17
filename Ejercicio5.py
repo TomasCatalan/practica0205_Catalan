@@ -20,5 +20,6 @@ def cuadrado():
     if x:
         z = [a**2 for a in x]
         print("los cuadrados de", x, "son igual a",z)
+    return
 
 cuadrado()
