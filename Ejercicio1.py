@@ -7,6 +7,7 @@ def x (y):
     Salida: Saludo con el nombre'''
     
     print("¡hola", y,"!")
+    return
 
 z = input("introduzca un nombre")
 x(z) 
